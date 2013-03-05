@@ -1,8 +1,8 @@
-92dea4559cd41d80370255ca0c16bc29 *DESCRIPTION
-1337f0a2112a7bc65fba1c0757fae643 *NAMESPACE
+3a2d81ac9d8450c487b3d3c256b781ba *DESCRIPTION
+34987f38484d532c88ef61ae3996a0c9 *NAMESPACE
 3b8746696ed71665239479faa2722d19 *R/BoxWhisker.R
 9e2cd9d1b349c679a27632686add2806 *R/CompleteData.R
-0b605252256587c7b410051bd92d8dbc *R/FSelect.R
+f287002cff9cb6ec76ac9d74a2d75f55 *R/FSelect.R
 ad5e78f6773adb8f81300bf81e8b64da *R/IntPlot.R
 3cf3c57b3e9dc7fa52b8ea110b078ffc *R/LandscapePlot.R
 31f0a494e78efa08a2ac6476d9a6ee80 *R/Loadings.R
@@ -18,7 +18,7 @@ ea8ce922298d624d25426b1d0af09aee *R/ldaPlot.R
 fc0878c7e5c67c2067cf47c638e340e2 *R/makeCompMat.R
 a4bf3219f9f11fcb38f2d34f4eee8d68 *R/partialF.R
 83afc1531229ae2e9ad94246cd64a334 *R/plotBinomPower.R
-d8a49b2e1514665dc6092cf5e4b35ab0 *R/simPower.R
+83745d3ca500961114d224c8f894f503 *R/simPower.R
 354b44ff476c9c469e4b7db3f945c0ba *data/CondA.RData
 7bf61b2fce8bb11143dcf40409e0b187 *data/CondB.RData
 e622fa232553c6001d5fa59beef3ee7b *data/Dyad.RData
@@ -47,7 +47,7 @@ a2c73cf4c48d3977cfef1eefe91662fc *man/binomPower.Rd
 e5f068f29be42660ed691fd4818dd723 *man/h2Estimate.Rd
 368aef8dd072a538d1bca3f37fbffc21 *man/ldaPlot.Rd
 e4b064412aef6a740097c72669876e5c *man/makeCompMat.Rd
-955951a8cc8806a168bcd340ad46da81 *man/multiDimBio-package.Rd
+1798ada53b8021ac301eadee3b567dd3 *man/multiDimBio-package.Rd
 684f0cfb841d48d62ab1d9bc3e912787 *man/partialF.Rd
 0d6032226c325016e5199e663a57e596 *man/plotBinomPower.Rd
 50af134ab18837b9ebadad80f6b923a5 *man/simPower.Rd

@@ -1,10 +1,4 @@
 simPower<-function(ndads,mm,vv,tau2,nperms,nbins){
-	if(is.element('doMC', installed.packages()[,'Package'])){
-		doMC::registerDoMC()
-	}else{
-		registerDoSEQ()
-	}
-	
 	mylogit = function(x) log(x/{1-x})
 	ilogit = function(x) 1/{1+exp(-x)}
 	
@@ -25,13 +19,14 @@ simPower<-function(ndads,mm,vv,tau2,nperms,nbins){
 	hm1 = glmer(cbind(swim, set) ~ (1 | Dad), data=mytable, family=binomial, REML=FALSE)
 	Dsim = as.numeric(deviance(hm0) - deviance(hm1))
 	
-	perm1 <- foreach(i=1:nperms, .combine=c) %dopar% {
-	neworder = sample(1:ncases, ncases)
-	ptable = data.frame(Dad = mytable$Dad, Bin = mytable$Bin, swim = mytable$swim[neworder], set =mytable$set[neworder])
-	hm0 = glm(cbind(swim, set) ~ 1, data=ptable, family=binomial)
-	hm1 = glmer(cbind(swim, set) ~ (1 | Dad), data=ptable, family=binomial)
-	D = as.numeric(deviance(hm0) - deviance(hm1))
-	D;
+	perm1 <- c()
+	for(i in 1:nperms){
+		neworder <- sample(1:ncases, ncases)
+		ptable <- data.frame(Dad = mytable$Dad, Bin = mytable$Bin, swim = mytable$swim[neworder], set =mytable$set[neworder])
+		hm0 <- glm(cbind(swim, set) ~ 1, data=ptable, family=binomial)
+		hm1 <- glmer(cbind(swim, set) ~ (1 | Dad), data=ptable, family=binomial)
+		D <- as.numeric(deviance(hm0) - deviance(hm1))
+		perm1 <- c(perm1,D)
 	}
 
 	pval<-length(which(perm1>Dsim))/length(perm1)

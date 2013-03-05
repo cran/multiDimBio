@@ -43,7 +43,7 @@ while(counter<target){
 	Ts<-c()
 	for(c in cols){
 		m.i<-lda(Group~Data[,c],tol=TOL)
-    scores<-predict(m.i)
+    	scores<-predict(m.i)
 		F.i<-partialF(m.i,Group,0)
 		#F.i<-V.w(scores$x[,1],Group)/V.b(scores$x[,1],Group)
 		T.i<-sum(m.i$svd)

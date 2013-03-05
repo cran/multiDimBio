@@ -12,6 +12,5 @@ import(
   pcaMethods,
   misc3d,
   MASS,
-  foreach,
   RColorBrewer
 )
