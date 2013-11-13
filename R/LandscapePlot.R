@@ -167,7 +167,7 @@ LandscapePlot<-function(Data, Groups=NULL, PDF=FALSE, LocPlot=FALSE, control=c(7
 				labels<-c('1','2','3','4','5','6','7','8','9')
 				}
 		
-			timestamp<-format(Sys.time(), '%d %m %s')
+			timestamp<-as.character(as.integer(Sys.time()))
 			print(timestamp)
 			if(PDF==TRUE){
 			pdf(paste(Groups[j],timestamp,'Functional Landscape.pdf'))

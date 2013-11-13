@@ -96,7 +96,7 @@ notes<-paste('PrF has been',p.adj.method,'adjusted for',counter,'comparisons',se
 
 OUT<-list('Selected'=selected,'F.Selected'=F.selected,'PrF'=PrFs,'PrNotes'=notes)
 
-timestamp<-format(Sys.time(), '%d %m %s')
+timestamp<-as.character(as.integer(Sys.time()))
 save(m.final, file=paste(timestamp,'FSelect-finalLDA',sep='-'))
 
 return(OUT)

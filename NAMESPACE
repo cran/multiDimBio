@@ -5,10 +5,13 @@
 exportPattern(".")
 
 # Import all packages listed as Imports or Depends
+importFrom(lme4, glmer, VarCorr)
+
 import(
   ggplot2,
   pcaMethods,
-  MASS,
   misc3d,
+  MASS,
+  foreach,
   RColorBrewer
 )

@@ -33,7 +33,7 @@ function(Scores, Cov.A, Cov.B, pvalues=rep(1,8), int.pvalues=rep(1,4)){
 	text(0.3, 0, labels='Interaction Not Significant', cex=2)
 	dev.off()
 	
-	timestamp<-format(Sys.time(), '%d %m %s')
+	timestamp<-as.character(as.integer(Sys.time()))
 	pdf(paste(timestamp,'Interaction Plots-LEGEND.pdf',sep='-'))
 	layout(matrix(c(1,2,3,4),ncol=2,byrow=TRUE))
 	

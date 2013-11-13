@@ -13,13 +13,13 @@ function(DATA,GROUPS,method=c('PCA','LDA')){
 		cat('Number to trait map, saved as a .csv in the working dir.','\n','\n')
 		print(NAMES)
 		
-		timestamp<-format(Sys.time(), '%d %m %s')
+		timestamp<-as.character(as.integer(Sys.time()))
 		write.csv(NAMES, paste(timestamp,'Number_Trait_PCA.csv'),row.names=FALSE)
 		
-		timestamp<-format(Sys.time(), '%d %m %s')
+		timestamp<-as.character(as.integer(Sys.time()))
 		write.csv(PPCA@loadings, paste(timestamp,'PCA Loadings.csv'))
 		
-		timestamp<-format(Sys.time(), '%d %m %s')
+		timestamp<-as.character(as.integer(Sys.time()))
 		for(i in 1:nPCS){		
 		pdf(paste(timestamp,i,'PCA-Loadings.pdf',sep='_'))	
 		title<-paste('PC',i,sep='')
@@ -45,12 +45,12 @@ function(DATA,GROUPS,method=c('PCA','LDA')){
 		colnames(NAMES)<-c('Number','Trait')
 		cat('Number to trait map, saved as a .csv in the working dir.','\n','\n')
 		print(NAMES)
-		timestamp<-format(Sys.time(), '%d %m %s')
+		timestamp<-as.character(as.integer(Sys.time()))
 		write.csv(NAMES, paste(timestamp,'Number_Trait_LDA.csv'),row.names=FALSE)
-		timestamp<-format(Sys.time(), '%d %m %s')
+		timestamp<-as.character(as.integer(Sys.time()))
 		write.csv(LDA$scaling, paste(timestamp,'LDA Loadings.csv'))
 				
-		timestamp<-format(Sys.time(), '%d %m %s')
+		timestamp<-as.character(as.integer(Sys.time()))
 		for(j in 1:ncol(OUT)){
 		pdf(paste(timestamp,j,'LDA-Loadings.pdf',sep='_'))
 		title<-paste('LD',j,sep='')

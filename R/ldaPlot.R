@@ -36,7 +36,7 @@ function(Data, Groups, palette='BrBG', axes=c(1,2,2,3,1,3)){
 	pi<-ggplot(pm1df.i,aes(LD1,LD2))
 	pi.save<-pi+geom_point(aes(colour=GC, shape=GC), size=3.5)+scale_colour_brewer(palette=palette)+scale_x_continuous(name=colnames(pm1df)[AX1])+scale_y_continuous(name=colnames(pm1df)[AX2])+theme(legend.position ='right', legend.background=element_rect(fill='#ffffffaa',colour='black'),panel.background=element_rect(fill='white',colour='black'),axis.text=element_text(colour='black',size=15),axis.title=element_text(colour='black',size=15), legend.key=element_rect(fill='white '),panel.grid.minor=element_blank(),panel.grid.major=element_blank())
 	
-	timestamp<-format(Sys.time(), '%d %m %s')
+	timestamp<-as.character(as.integer(Sys.time()))
 	ggsave(paste(timestamp,'ldaPlot-AllGroups.pdf'),pi.save)
 	}#end for i
 	}#end if unique(groups)>2
@@ -58,7 +58,7 @@ function(Data, Groups, palette='BrBG', axes=c(1,2,2,3,1,3)){
 		
 		psave.j<-p.j+geom_density(aes(fill=GC),xlab='Linear Discriminant 1 Score')+scale_fill_manual(values=c('#8C510A66','#01665E66'))+geom_point(aes(y=0,x=LD1,shape=GC),size=3.5)+geom_point(aes(y=0,x=LD1,colour=GC,shape=GC))+scale_colour_manual(values=c('#8C510A','#01665E'))+xlab('Linear Discriminant 1 Score')+ylab('Density')+theme(legend.position ='right', legend.background=element_rect(fill='#ffffffaa',colour='black'),panel.background=element_rect(fill='white',colour='black'),axis.text=element_text(colour='black',size=15),axis.title=element_text(colour='black',size=15), legend.key=element_rect(fill='white '),panel.grid.minor=element_blank(),panel.grid.major=element_blank())
 		
-		timestamp<-format(Sys.time(), '%d %m %s')
+		timestamp<-as.character(as.integer(Sys.time()))
 		ggsave(paste(timestamp,comp[j,1],comp[j,2],'Group LDA Plot.pdf',sep=' '), psave.j)
 		}#end for j
 		

@@ -51,13 +51,13 @@ GR.use<-Groups[use.DAT]
 
 traitA<-2
 
-mlda<-lda(GR.use~DAT.use[,traitA])
+mlda<-MASS::lda(GR.use~DAT.use[,traitA])
 
 F1<-partialF(mlda,GR.use,0)
 
 traitB<-1
 
-mlda2<-lda(GR.use~DAT.use[,c(traitA,traitB)])
+mlda2<-MASS::lda(GR.use~DAT.use[,c(traitA,traitB)])
 
 partialF(mlda2,GR.use,F1)
 
