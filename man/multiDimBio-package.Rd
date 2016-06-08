@@ -3,25 +3,25 @@
 \alias{multiDimBio}
 \docType{package}
 
-\title{A Package for the Design, Analysis, and Visualization of Systems Biology Experiments
+\title{Multivariate Analysis and Visualization for Biological Data
 }
 
 \description{
-multiDimBio is a package designed to support a systems biology research program from inception through publication.  It focuses on dimension reduction approaches to detect patterns in complex, multivariate experimental data and places an emphasis on informative visualizations.  The goal for this project is to create a package that will evolve over time, thereby remaining relevant and reflective of current methods and techniques.  As a result, we encourage suggested additions to the package, both methodological and graphical.
+Code to support a systems biology research program from inception through publication.  The methods focus on dimension reduction approaches to detect patterns in complex, multivariate experimental data and places an emphasis on informative visualizations.  The goal for this project is to create a package that will evolve over time, thereby remaining relevant and reflective of current methods and techniques.  As a result, we encourage suggested additions to the package, both methodological and graphical.
 }
 
 \details{
 \tabular{ll}{
 Package: \tab multiDimBio\cr
 Type: \tab Package\cr
-Version: \tab 0.3.3\cr
-Date: \tab 2013-03-05\cr
+Version: \tab 1.0.1\cr
+Date: \tab 2016-06-08\cr
 License: \tab GPL 3.0\cr
 LazyLoad: \tab yes\cr
 }
 The datasets are: Nuclei, Groups, CondA, CondB, Scores, and Dyad
 
-The main functions are: BoxWhisker, CompleteData, FSelect, IntPlot, ldaPlot, Loadings, MeanCent, PercentMax, PermuteLDA, Power, PPCA, ZTrans, binomPower, h2Estimate, and plotBinomPower.
+The main functions are: boxWhisker, completeData, F_select, intPlot, ldaPlot, loadings, meanCent, percentMax, permuteLDA, power, ppca_mdb, zTrans, binomPower, h2Estimate, and plotBinomPower.
 
 Type ?<object> to learn more about these objects, e.g. ?Nuclei
 
@@ -29,7 +29,7 @@ Type ?<function> to see examples of the function's use, e.g. ?FSelect
 }
 
 \author{
-	Samuel V Scarpino, Ross Gillette, and David Crews
+	Samuel V Scarpino
 	Maintainer: Samuel V Scarpino <scarpino@utexas.edu>
 }
 
@@ -41,6 +41,8 @@ Costanza M, Afifi A. (1979) Comparison of Stopping Rules in Forward Stepwise Dis
 Crews D, Gillette R, Scarpino SV, Manikkam M, Savenkova MI, Skinner MK. (2012)
 Epigenetic Transgenerational Alterations to Stress Response in Brain Gene Networks and 
 Behavior. Proc. Natl. Acad. Sci. USA: 109(23) 9143 - 9148.
+
+Davies SW, Scarpino SV, Pongwarin T, Scott J, Matz MV. (2015) Estimating Trait Heritability in Highly Fecund Species. G3: Genes| Genomes| Genetics: 5(12) 2639 - 45.
 
 Habbema J, Hermans J. (1977) Selection of Variables in Discriminant Analysis by F-Statistics and Error Rate. Technometrics: 19(4) 487 - 493.
 
