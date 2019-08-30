@@ -1,4 +1,4 @@
-00084f558cf46cda35b279fbae413edd *DESCRIPTION
+4093d955aae54a44dbf36176fb90fa4a *DESCRIPTION
 c12a487762c715d822d61d17d17cceb9 *NAMESPACE
 bb1eb2d42e8aa058c9efdaaa0e2adff6 *R/FSelect.R
 ab38d3fb814d3180d59619e16eae1d82 *R/IntPlot.R
@@ -14,7 +14,7 @@ f387ef2226b64ec14dcc658460f5b4bf *R/binomPower.R
 a6fcccc84269f9dcef33f7f79eeb12b6 *R/boxWhisker.R
 0be11654bcc8d86f690cc093e6b3ea5d *R/completeData.R
 daed90ee197ecbfd6754242f208dc796 *R/getP.R
-2f1f13e51ebcfdb3cc61a89fb5962097 *R/h2Estimate.R
+e8c7e535528639cabc5c2de27f729727 *R/h2Estimate.R
 d1ac5fcd383b87c816bac5fb5b49f7c2 *R/ldaPlot.R
 f1dfb3eab235e0bf62e2b054a16d2fa4 *R/makeCompMat.R
 395f01ec86ff9e2c142af5545333a4e7 *R/multiDimBio-package.R
@@ -47,10 +47,10 @@ b751c91a79d9c06c3fbc9fa0ee50d7eb *man/binomPower.Rd
 c5ef2d6ebf481b7e53bda361fb5b5d37 *man/boxWhisker.Rd
 ebd662d6532371bdfe899b6052b28f31 *man/completeData.Rd
 c8acb06150d95b2bcaa062cdfa6bb898 *man/getP.Rd
-e5f068f29be42660ed691fd4818dd723 *man/h2Estimate.Rd
+e25199fa7da60c848caf996ff83059a3 *man/h2Estimate.Rd
 c5e8d45fe24b134aec14d4ff7953276c *man/ldaPlot.Rd
 e4b064412aef6a740097c72669876e5c *man/makeCompMat.Rd
-89186f1e1f6501d975561b24148bef57 *man/multiDimBio-package.Rd
+2620291dc576138813940932b2b99986 *man/multiDimBio-package.Rd
 26406eaf4420b56e2e0be4afa8593f7f *man/partialF.Rd
 8141c35a56f420580dac1c91ceb5ec24 *man/plotBinomPower.Rd
 db754fcbe048041ebbb9298b1b2a33f7 *man/simPower.Rd
