@@ -1,4 +1,4 @@
-4093d955aae54a44dbf36176fb90fa4a *DESCRIPTION
+8dc00d43606eb512fcfd9475e7fa422f *DESCRIPTION
 c12a487762c715d822d61d17d17cceb9 *NAMESPACE
 bb1eb2d42e8aa058c9efdaaa0e2adff6 *R/FSelect.R
 ab38d3fb814d3180d59619e16eae1d82 *R/IntPlot.R
@@ -20,7 +20,7 @@ f1dfb3eab235e0bf62e2b054a16d2fa4 *R/makeCompMat.R
 395f01ec86ff9e2c142af5545333a4e7 *R/multiDimBio-package.R
 b29d8dd6dfd04bf5d1c05fc1f007ac6a *R/partialF.R
 212589c55caad356ad5a254b6adbb00d *R/plotBinomPower.R
-7ba10e5d04e44a026afafebbc33bfcd9 *R/simPower.R
+16bf5462a5d85b3cecba16abd909c5d0 *R/simPower.R
 354b44ff476c9c469e4b7db3f945c0ba *data/CondA.RData
 7bf61b2fce8bb11143dcf40409e0b187 *data/CondB.RData
 e622fa232553c6001d5fa59beef3ee7b *data/Dyad.RData
@@ -50,7 +50,7 @@ c8acb06150d95b2bcaa062cdfa6bb898 *man/getP.Rd
 e25199fa7da60c848caf996ff83059a3 *man/h2Estimate.Rd
 c5e8d45fe24b134aec14d4ff7953276c *man/ldaPlot.Rd
 e4b064412aef6a740097c72669876e5c *man/makeCompMat.Rd
-2620291dc576138813940932b2b99986 *man/multiDimBio-package.Rd
+c075b0080a6bca0e8bf70aced36cd16f *man/multiDimBio-package.Rd
 26406eaf4420b56e2e0be4afa8593f7f *man/partialF.Rd
 8141c35a56f420580dac1c91ceb5ec24 *man/plotBinomPower.Rd
 db754fcbe048041ebbb9298b1b2a33f7 *man/simPower.Rd
